@@ -7,7 +7,7 @@ function App() {
                 <p>
                     Edit <code>src/App.js</code> and save to reload axios
                     react-query react-icons sass styled-components react-scroll
-                    react-use swiper-js react-router-dom.
+                    react-use swiper-js react-router-dom bisa.
                 </p>
             </header>
         </div>
