@@ -1,13 +1,31 @@
 {
   "files": {
-    "main.css": "/disney-plus/static/css/main.c5a394e1.css",
-    "main.js": "/disney-plus/static/js/main.655016a2.js",
+    "main.css": "/disney-plus/static/css/main.6de763ee.css",
+    "main.js": "/disney-plus/static/js/main.cca9735a.js",
+    "static/media/15-national-geographic.mp4": "/disney-plus/static/media/15-national-geographic.bf1b675d8d0beb6c25bc.mp4",
+    "static/media/14-star-wars.mp4": "/disney-plus/static/media/14-star-wars.90fa9f5ae993d23505b5.mp4",
+    "static/media/12-pixar.mp4": "/disney-plus/static/media/12-pixar.971baf2b0d1f60c27f42.mp4",
+    "static/media/11-disney.mp4": "/disney-plus/static/media/11-disney.76f717a34732ff5c5752.mp4",
+    "static/media/13-marvel.mp4": "/disney-plus/static/media/13-marvel.25a822f51e652dec1417.mp4",
+    "static/media/star_white.png": "/disney-plus/static/media/star_white.476b477c80feca9e5a45.png",
+    "static/media/disney_white.png": "/disney-plus/static/media/disney_white.fbd255d5d0546d0fbc06.png",
+    "static/media/pikachu.png": "/disney-plus/static/media/pikachu.cb81c8c0d7c92787bb35.png",
+    "static/media/pixar_white.png": "/disney-plus/static/media/pixar_white.468f8fb681078c8dab2c.png",
+    "static/media/national_white.png": "/disney-plus/static/media/national_white.1735e58b0f0637eb04fb.png",
+    "static/media/marvel_white.png": "/disney-plus/static/media/marvel_white.cef505768ead630ded2e.png",
+    "static/media/images_not-found.png": "/disney-plus/static/media/images_not-found.f633636985baf574c4b9.png",
+    "static/media/images_not-found-l.png": "/disney-plus/static/media/images_not-found-l.8bdd6a3fb259bc3a2339.png",
+    "static/media/not_found_ava.png": "/disney-plus/static/media/not_found_ava.c16e9545d4575c716a4a.png",
+    "static/media/viewers-starwars.png": "/disney-plus/static/media/viewers-starwars.3fb2e20c0faee83d89db.png",
+    "static/media/viewers-disney.png": "/disney-plus/static/media/viewers-disney.eb5bab59e7bf29389dc7.png",
+    "static/media/viewers-national.png": "/disney-plus/static/media/viewers-national.c50dd65f4a3d07a590f7.png",
+    "static/media/logoNav.svg": "/disney-plus/static/media/logoNav.8205aae82a3c67ca943e8628e2183b0d.svg",
     "index.html": "/disney-plus/index.html",
-    "main.c5a394e1.css.map": "/disney-plus/static/css/main.c5a394e1.css.map",
-    "main.655016a2.js.map": "/disney-plus/static/js/main.655016a2.js.map"
+    "main.6de763ee.css.map": "/disney-plus/static/css/main.6de763ee.css.map",
+    "main.cca9735a.js.map": "/disney-plus/static/js/main.cca9735a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a394e1.css",
-    "static/js/main.655016a2.js"
+    "static/css/main.6de763ee.css",
+    "static/js/main.cca9735a.js"
   ]
 }
