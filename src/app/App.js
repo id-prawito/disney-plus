@@ -1,11 +1,11 @@
 import "./App.scss";
 import "swiper/swiper.min.css";
 import { BrowserRouter, Route } from "react-router-dom";
-// import Routes from "../config/RoutesDisney";
+import Routes from "../config/RoutesDisney";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { GlobalProvider } from "../config/GlobalState";
-// import Scroll from "../components/Header/Scroll";
+import Scroll from "../components/Header/Scroll";
 
 function App() {
     return (
@@ -15,8 +15,8 @@ function App() {
                     render={(props) => (
                         <>
                             <Header {...props} />
-                            {/* <Scroll /> */}
-                            {/* <Routes /> */}
+                            <Scroll />
+                            <Routes />
                             <Footer />
                         </>
                     )}
