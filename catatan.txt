@@ -1,0 +1,50 @@
+Bersih-bersih codingan
+- Component
++ Button        || done
++ Disney        || done
++ Footer        || done
++ Header        || done
++ Hero          || done
++ Input         || done
++ ListCard      || done
++ Modal         || done
++ Movie         || done
++ MovieCard     || done
++ Config        || done
+
+- Pages
++ Cast          ||
++ Detail        ||
+  + Cast        || done
+  + Episode     || done
+  + VideoList   || done
++ Catalog       || done
+
+
+Fungsi Search di Menu Movie dan TV                 || done gokilsssssss
+Fungsi View More di tiap Halaman                   || done gokilsssssss
+Fungsi Person (opsional)                           || done gokilsssssss
+Fungsi Search                                      || done gokilsssssss
+Fungsi Wishlist                                    || done gokilsssssss
+Fungsi View More List Similar Recomendation        || done gokilsssssss
+Fungsi genre                                       || done gokilsssssss
+Fungsi Scroll to the top                           || done gokilsssssss
+Fungsi Handle image not found                      || done almost
+Fungsi Movie Grid di Homepage Disney (marvel, dll) || done
+
+Bersihan console.log di try catch                  ||
+
++ Responsivez
+  + Detail Screen                                 || mayor: done, minor: --, Movie: done, Series: not yet
+    - Smartphones   = min-width : 320   &   max-width: 480    || done
+    - Ipads         = min-width : 481   &   max-width: 768    || done
+    - Laptop        = min-width : 769   &   max-width: 1024   || done
+    - Laptop_Large  = min-width : 1025  &   max-width: 1224   || done
+    - Large_Screen  = min-width : 1224                        || done
+    
+  + Home Screen, Movie Screen, Series Screen                  || mayor: done, minor: --
+    - Smartphones   = min-width : 320   &   max-width: 480    || done
+    - Ipads         = min-width : 481   &   max-width: 768    || done
+    - Laptop        = min-width : 769   &   max-width: 1024   || done
+    - Laptop_Large  = min-width : 1025  &   max-width: 1224   || done
+    - Large_Screen  = min-width : 1224                        || done
