@@ -126,7 +126,7 @@ const Header = () => {
                     </div>
                     <div className="header__profile_link">
                         <div className="header__menu_watchlist">
-                            <Search />
+                            {/* <Search /> */}
                             <div className="header__item_watchlist">
                                 <FaPlus />
                                 <NavLink
