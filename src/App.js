@@ -8,7 +8,8 @@ function App() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     Edit <code>src/App.js</code> and save to reload axios
-                    react-query react-icons sass styled-components.
+                    react-query react-icons sass styled-components react-scroll
+                    react-use.
                 </p>
                 <a
                     className="App-link"
