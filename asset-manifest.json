@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/disney-plus/static/css/main.c5a394e1.css",
-    "main.js": "/disney-plus/static/js/main.655016a2.js",
+    "main.css": "/disney-plus/static/css/main.0cfa900e.css",
+    "main.js": "/disney-plus/static/js/main.8774781a.js",
+    "static/media/pikachu.png": "/disney-plus/static/media/pikachu.cb81c8c0d7c92787bb35.png",
+    "static/media/images_not-found.png": "/disney-plus/static/media/images_not-found.f633636985baf574c4b9.png",
+    "static/media/logoNav.svg": "/disney-plus/static/media/logoNav.8205aae82a3c67ca943e8628e2183b0d.svg",
     "index.html": "/disney-plus/index.html",
-    "main.c5a394e1.css.map": "/disney-plus/static/css/main.c5a394e1.css.map",
-    "main.655016a2.js.map": "/disney-plus/static/js/main.655016a2.js.map"
+    "main.0cfa900e.css.map": "/disney-plus/static/css/main.0cfa900e.css.map",
+    "main.8774781a.js.map": "/disney-plus/static/js/main.8774781a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a394e1.css",
-    "static/js/main.655016a2.js"
+    "static/css/main.0cfa900e.css",
+    "static/js/main.8774781a.js"
   ]
 }
