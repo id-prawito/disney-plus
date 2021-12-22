@@ -11,7 +11,7 @@ import Card from "../pages/Card";
 
 const RoutesDisney = () => {
     return (
-        <Switch>
+        <Switch basename="/disney-plus">
             <Route exact path="/" component={Home} />
             <Route exact path="/:category/search/:keyword" component={Search} />
             <Route exact path="/:category/person/:id" component={CastDetail} />
