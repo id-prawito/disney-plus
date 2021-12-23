@@ -112,8 +112,6 @@ const DetailScreen = () => {
     let storedTv = watchlistTv.find((o) => o.id === idnya);
     const watchlistTvDisabled = storedTv ? true : false;
 
-    console.log(item);
-
     return (
         <>
             {item && (

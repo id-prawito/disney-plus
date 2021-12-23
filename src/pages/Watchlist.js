@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { MovieCardGrid, TvCardGrid } from "../components/MovieCard";
 import { GlobalContext } from "../config/GlobalState";
+import MetaDecorator from "../config/MetaDecorator";
 
 const Watchlist = () => {
     const { watchlist, watchlistTv } = useContext(GlobalContext);
@@ -8,6 +9,11 @@ const Watchlist = () => {
 
     return (
         <>
+            <MetaDecorator
+                description="Watchlist | Disney + Indonesia"
+                title="Watchlist | Disney +"
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
             <div className="container_movie" style={{ gap: 20 }}>
                 <div className="pembungkus">
                     <h4>Watchlist Movie</h4>

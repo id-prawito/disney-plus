@@ -9,6 +9,7 @@ import Watchlist from "./Watchlist";
 import "./Detail/detail.scss";
 import apiConfig from "../services/apiConfig";
 import { Link } from "react-router-dom";
+import MetaDecorator from "../config/MetaDecorator";
 
 const Catalog = () => {
     const { category } = useParams();
@@ -33,6 +34,11 @@ const MovieGrid = () => {
 
     return (
         <>
+            <MetaDecorator
+                description="Movie | Disney + Indonesia"
+                title="Movie | Disney +"
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
             <Hero
                 params={{ pages: 1, with_companies: 420 }}
                 category={cate.movie}
@@ -50,6 +56,11 @@ const TvGrid = () => {
 
     return (
         <>
+            <MetaDecorator
+                description="Series TV | Disney + Indonesia"
+                title="Series TV | Disney +"
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
             <Hero
                 params={{ pages: 1, with_companies: 420 }}
                 category={cate.tv}
@@ -301,53 +312,60 @@ const Genres = () => {
     ];
 
     return (
-        <div className="container_movie">
-            <div className="pembungkus">
-                <div className="bungkus">
-                    <div className="judul_genres">Movie Genres</div>
-                    <div className="genres_item-card">
-                        {data.map((item, i) => (
-                            <Link
-                                key={i}
-                                to={`/movie/genres/${item.id_genres}`}
-                            >
-                                <div className="card_genres">
-                                    <img
-                                        src={apiConfig.w500Image(
-                                            item.file_path
-                                        )}
-                                        alt="disney"
-                                    />
-                                    <div className="text_genres">
-                                        {item.judul}
+        <>
+            <MetaDecorator
+                description="Genres Movie and TV"
+                title="Genres | Disney +"
+                imageUrl="https://image.tmdb.org/t/p/w500//vIPIyTJqcgOKgKcExCvTDpLpTYW.jpg"
+            ></MetaDecorator>
+            <div className="container_movie">
+                <div className="pembungkus">
+                    <div className="bungkus">
+                        <div className="judul_genres">Movie Genres</div>
+                        <div className="genres_item-card">
+                            {data.map((item, i) => (
+                                <Link
+                                    key={i}
+                                    to={`/movie/genres/${item.id_genres}`}
+                                >
+                                    <div className="card_genres">
+                                        <img
+                                            src={apiConfig.w500Image(
+                                                item.file_path
+                                            )}
+                                            alt="disney"
+                                        />
+                                        <div className="text_genres">
+                                            {item.judul}
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        ))}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="bungkus">
-                    <div className="judul_genres">TV Genres</div>
-                    <div className="genres_item-card">
-                        {datatv.map((item, i) => (
-                            <Link key={i} to={`/tv/genres/${item.id}`}>
-                                <div className="card_genres">
-                                    <img
-                                        src={apiConfig.w500Image(
-                                            item.file_path
-                                        )}
-                                        alt="disney"
-                                    />
-                                    <div className="text_genres">
-                                        {item.name}
+                    <div className="bungkus">
+                        <div className="judul_genres">TV Genres</div>
+                        <div className="genres_item-card">
+                            {datatv.map((item, i) => (
+                                <Link key={i} to={`/tv/genres/${item.id}`}>
+                                    <div className="card_genres">
+                                        <img
+                                            src={apiConfig.w500Image(
+                                                item.file_path
+                                            )}
+                                            alt="disney"
+                                        />
+                                        <div className="text_genres">
+                                            {item.name}
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        ))}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { useLocation } from "react-router-dom";
 import { ButtonIcon } from "../components/Button";
 import tmdbApi from "../services/tmdbApi";
+import MetaDecorator from "../config/MetaDecorator";
 
 const List = () => {
     const { category, type } = useParams();
@@ -122,24 +123,38 @@ export const ListMovie = () => {
     };
 
     return (
-        <div className="container_movie">
-            <div className="judul_list">{judulnya}</div>
-            <div className="class_genres">
-                {items.map((item, i) => (
-                    <MovieCardGrid key={i} item={item} category={category} />
-                ))}
-            </div>
-            {page < totalPage ? (
-                <div
-                    className="movie-grid__loadmore"
-                    style={{ margin: "auto", marginTop: "20px" }}
-                >
-                    <ButtonIcon className="outline_default" onClick={loadMore}>
-                        Load more
-                    </ButtonIcon>
+        <>
+            <MetaDecorator
+                description={`${judulnya} | Disney + Indonesia`}
+                title={`${judulnya} | Disney +`}
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
+            <div className="container_movie">
+                <div className="judul_list">{judulnya}</div>
+                <div className="class_genres">
+                    {items.map((item, i) => (
+                        <MovieCardGrid
+                            key={i}
+                            item={item}
+                            category={category}
+                        />
+                    ))}
                 </div>
-            ) : null}
-        </div>
+                {page < totalPage ? (
+                    <div
+                        className="movie-grid__loadmore"
+                        style={{ margin: "auto", marginTop: "20px" }}
+                    >
+                        <ButtonIcon
+                            className="outline_default"
+                            onClick={loadMore}
+                        >
+                            Load more
+                        </ButtonIcon>
+                    </div>
+                ) : null}
+            </div>
+        </>
     );
 };
 
@@ -225,24 +240,34 @@ export const ListTV = () => {
     };
 
     return (
-        <div className="container_movie">
-            <div className="judul_list">{judulnya}</div>
-            <div className="class_genres">
-                {items.map((item, i) => (
-                    <TvCardGrid key={i} item={item} category={category} />
-                ))}
-            </div>
-            {page < totalPage ? (
-                <div
-                    className="movie-grid__loadmore"
-                    style={{ margin: "auto", marginTop: "20px" }}
-                >
-                    <ButtonIcon className="outline_default" onClick={loadMore}>
-                        Load more
-                    </ButtonIcon>
+        <>
+            <MetaDecorator
+                description={`${judulnya} | Disney + Indonesia`}
+                title={`${judulnya} | Disney +`}
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
+            <div className="container_movie">
+                <div className="judul_list">{judulnya}</div>
+                <div className="class_genres">
+                    {items.map((item, i) => (
+                        <TvCardGrid key={i} item={item} category={category} />
+                    ))}
                 </div>
-            ) : null}
-        </div>
+                {page < totalPage ? (
+                    <div
+                        className="movie-grid__loadmore"
+                        style={{ margin: "auto", marginTop: "20px" }}
+                    >
+                        <ButtonIcon
+                            className="outline_default"
+                            onClick={loadMore}
+                        >
+                            Load more
+                        </ButtonIcon>
+                    </div>
+                ) : null}
+            </div>
+        </>
     );
 };
 
@@ -331,24 +356,38 @@ export const ListDiscover = () => {
     };
 
     return (
-        <div className="container_movie">
-            <div className="judul_list">{judulnya}</div>
-            <div className="class_genres">
-                {items.map((item, i) => (
-                    <MovieCardGrid key={i} item={item} category={category} />
-                ))}
-            </div>
-            {page < totalPage ? (
-                <div
-                    className="movie-grid__loadmore"
-                    style={{ margin: "auto", marginTop: "20px" }}
-                >
-                    <ButtonIcon className="outline_default" onClick={loadMore}>
-                        Load more
-                    </ButtonIcon>
+        <>
+            <MetaDecorator
+                description={`${judulnya} | Disney + Indonesia`}
+                title={`${judulnya} | Disney +`}
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
+            <div className="container_movie">
+                <div className="judul_list">{judulnya}</div>
+                <div className="class_genres">
+                    {items.map((item, i) => (
+                        <MovieCardGrid
+                            key={i}
+                            item={item}
+                            category={category}
+                        />
+                    ))}
                 </div>
-            ) : null}
-        </div>
+                {page < totalPage ? (
+                    <div
+                        className="movie-grid__loadmore"
+                        style={{ margin: "auto", marginTop: "20px" }}
+                    >
+                        <ButtonIcon
+                            className="outline_default"
+                            onClick={loadMore}
+                        >
+                            Load more
+                        </ButtonIcon>
+                    </div>
+                ) : null}
+            </div>
+        </>
     );
 };
 
@@ -453,41 +492,60 @@ export const ListSimilar = () => {
     };
 
     return (
-        <div className="container_movie">
-            {category === "movie" ? (
-                <div className="judul_list">{`${judulnya} from ${nama.title}`}</div>
-            ) : (
-                <div className="judul_list">{`${judulnya} from ${nama.name}`}</div>
-            )}
+        <>
+            <MetaDecorator
+                description={`${judulnya} | Disney + Indonesia`}
+                title={
+                    category === "movie"
+                        ? `${judulnya} from ${nama.title}`
+                        : `${judulnya} from ${nama.name}`
+                }
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
 
-            {category === "movie" ? (
-                <div className="class_genres">
-                    {items.map((item, i) => (
-                        <MovieCardGrid
-                            key={i}
-                            item={item}
-                            category={category}
-                        />
-                    ))}
-                </div>
-            ) : (
-                <div className="class_genres">
-                    {items.map((item, i) => (
-                        <TvCardGrid key={i} item={item} category={category} />
-                    ))}
-                </div>
-            )}
-            {page < totalPage ? (
-                <div
-                    className="movie-grid__loadmore"
-                    style={{ margin: "auto", marginTop: "20px" }}
-                >
-                    <ButtonIcon className="outline_default" onClick={loadMore}>
-                        Load more
-                    </ButtonIcon>
-                </div>
-            ) : null}
-        </div>
+            <div className="container_movie">
+                {category === "movie" ? (
+                    <div className="judul_list">{`${judulnya} from ${nama.title}`}</div>
+                ) : (
+                    <div className="judul_list">{`${judulnya} from ${nama.name}`}</div>
+                )}
+
+                {category === "movie" ? (
+                    <div className="class_genres">
+                        {items.map((item, i) => (
+                            <MovieCardGrid
+                                key={i}
+                                item={item}
+                                category={category}
+                            />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="class_genres">
+                        {items.map((item, i) => (
+                            <TvCardGrid
+                                key={i}
+                                item={item}
+                                category={category}
+                            />
+                        ))}
+                    </div>
+                )}
+                {page < totalPage ? (
+                    <div
+                        className="movie-grid__loadmore"
+                        style={{ margin: "auto", marginTop: "20px" }}
+                    >
+                        <ButtonIcon
+                            className="outline_default"
+                            onClick={loadMore}
+                        >
+                            Load more
+                        </ButtonIcon>
+                    </div>
+                ) : null}
+            </div>
+        </>
     );
 };
 

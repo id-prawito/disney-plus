@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { ButtonIcon } from "../components/Button";
 import tmdbApi from "../services/tmdbApi";
 import "./Detail/detail.scss";
+import MetaDecorator from "../config/MetaDecorator";
 
 const Search = () => {
     const [items, setItems] = useState([]);
@@ -76,35 +77,49 @@ const Search = () => {
     };
 
     return (
-        <div className="container_movie">
-            {category === "movie" ? (
-                <div className="class_search">
-                    {items.map((item, i) => (
-                        <MovieCardGrid
-                            key={i}
-                            item={item}
-                            category={category}
-                        />
-                    ))}
-                </div>
-            ) : (
-                <div className="class_search">
-                    {items.map((item, i) => (
-                        <TvCardGrid key={i} item={item} category={category} />
-                    ))}
-                </div>
-            )}
-            {page < totalPage ? (
-                <div
-                    className="movie-grid__loadmore"
-                    style={{ margin: "auto", marginTop: "20px" }}
-                >
-                    <ButtonIcon className="outline_default" onClick={loadMore}>
-                        Load more
-                    </ButtonIcon>
-                </div>
-            ) : null}
-        </div>
+        <>
+            <MetaDecorator
+                description="Search | Disney + Indonesia"
+                title="Search | Disney +"
+                imageUrl="https://i.ibb.co/tz4gHZB/image-disney.png"
+            ></MetaDecorator>
+            <div className="container_movie">
+                {category === "movie" ? (
+                    <div className="class_search">
+                        {items.map((item, i) => (
+                            <MovieCardGrid
+                                key={i}
+                                item={item}
+                                category={category}
+                            />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="class_search">
+                        {items.map((item, i) => (
+                            <TvCardGrid
+                                key={i}
+                                item={item}
+                                category={category}
+                            />
+                        ))}
+                    </div>
+                )}
+                {page < totalPage ? (
+                    <div
+                        className="movie-grid__loadmore"
+                        style={{ margin: "auto", marginTop: "20px" }}
+                    >
+                        <ButtonIcon
+                            className="outline_default"
+                            onClick={loadMore}
+                        >
+                            Load more
+                        </ButtonIcon>
+                    </div>
+                ) : null}
+            </div>
+        </>
     );
 };
 

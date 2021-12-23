@@ -14,6 +14,7 @@ import {
     FaInstagram,
     FaImdb,
 } from "react-icons/fa";
+import MetaDecorator from "../../config/MetaDecorator";
 
 const CastDetail = () => {
     const { id } = useParams();
@@ -57,6 +58,11 @@ const CastDetail = () => {
         <>
             {data && (
                 <>
+                    <MetaDecorator
+                        description={data.biography}
+                        title={`${data.name} | Disney +`}
+                        imageUrl={apiConfig.originalImage(data.profile_path)}
+                    ></MetaDecorator>
                     <div className="container_movie" style={{ gap: 30 }}>
                         <div className="castnya__bungkus">
                             <div className="castnya__detail">
