@@ -22,6 +22,7 @@ import {
     FaStar,
 } from "react-icons/fa";
 import { GlobalContext } from "../../config/GlobalState";
+import MetaDecorator from "../../config/MetaDecorator";
 
 const DetailScreen = () => {
     const [movieImages, setMovieImages] = useState([]);
@@ -111,10 +112,19 @@ const DetailScreen = () => {
     let storedTv = watchlistTv.find((o) => o.id === idnya);
     const watchlistTvDisabled = storedTv ? true : false;
 
+    console.log(item);
+
     return (
         <>
             {item && (
                 <>
+                    <MetaDecorator
+                        description={item.overview}
+                        title={`${item.title || item.name} | Disney +`}
+                        imageUrl={apiConfig.originalImage(
+                            item.backdrop_path || item.poster_path
+                        )}
+                    ></MetaDecorator>
                     <div className="detail_screen">
                         <div
                             className="screen_item"
