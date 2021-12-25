@@ -252,26 +252,78 @@
         }
     }
 
-    &__item-link {
+    &__item-link-watchlist {
         display: flex;
         align-items: center;
+        gap: 6px;
         color: $secondary-color;
         text-decoration: none;
         font-weight: 500;
         cursor: pointer;
         height: 100%;
+        opacity: 1;
         transition: all 0.2s ease-in-out;
 
         &.active {
-            color: #a1a1a1;
+            opacity: 0.5;
 
             &:hover {
-                color: $secondary-color;
+                opacity: 1;
             }
         }
 
         &:hover {
-            color: #a1a1a1;
+            opacity: 0.5;
+        }
+
+    }
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: $secondary-color;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        height: 100%;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+
+        &.active {
+            opacity: 0.5;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        @include smartphones {
+            padding: 0 4px;
+            font-size: 14px;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        @include ipads {
+            padding: 0 4px;
+            font-size: 14px;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        @include laptop {
+            padding: 0 4px;
+            font-size: 14px;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        @include laptop_large {
+            padding: 0 4px;
+            font-size: 14px;
+            flex-direction: column;
+            gap: 4px;
         }
     }
 }

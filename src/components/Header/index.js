@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useContext } from "react";
-import { FaHome, FaPlus, FaDice } from "react-icons/fa";
+import { FaHome, FaPlus, FaDice, FaGetPocket } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import logoProfile from "../../assets/images/pikachu.png";
 import { MdMovie, MdVideoLibrary } from "react-icons/md";
@@ -51,36 +51,36 @@ const Header = () => {
                                     </NavLink>
                                 ) : (
                                     <>
-                                        <FaHome />
                                         <NavLink
                                             to="/"
                                             exact={true}
                                             className="header__item-link"
                                         >
+                                            <FaHome />
                                             <div className="text_nav">Home</div>
                                         </NavLink>
                                     </>
                                 )}
                             </div>
                             <div className="header__item">
-                                <MdMovie />
                                 <NavLink
                                     to="/movie"
                                     className="header__item-link"
                                 >
+                                    <MdMovie />
                                     <div className="text_nav">Movies</div>
                                 </NavLink>
                             </div>
                             <div className="header__item">
                                 {window.innerWidth > 1224 ? (
                                     <>
-                                        <MdVideoLibrary />
                                         <NavLink
                                             to="/"
                                             activeClassName="active"
                                             className="header__item-link"
                                             exact={true}
                                         >
+                                            <FaGetPocket />
                                             <div className="text_nav">
                                                 Disney+
                                             </div>
@@ -104,21 +104,21 @@ const Header = () => {
                                 )}
                             </div>
                             <div className="header__item">
-                                <MdVideoLibrary />
                                 <NavLink
                                     to="/tv"
                                     activeClassName="active"
                                     className="header__item-link"
                                 >
+                                    <MdVideoLibrary />
                                     <div className="text_nav">Series</div>
                                 </NavLink>
                             </div>
                             <div className="header__item">
-                                <FaDice />
                                 <NavLink
                                     to="/genres"
                                     className="header__item-link"
                                 >
+                                    <FaDice />
                                     <div className="text_nav">Genres</div>
                                 </NavLink>
                             </div>
@@ -131,7 +131,7 @@ const Header = () => {
                                 <FaPlus />
                                 <NavLink
                                     to="/watchlist"
-                                    className="header__item-link"
+                                    className="header__item-link-watchlist"
                                 >
                                     Watchlist
                                     <span className="text_jumlah">
