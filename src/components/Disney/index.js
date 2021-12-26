@@ -9,8 +9,8 @@ import national from "../../assets/images/viewers-national.png";
 import disney from "../../assets/images/viewers-disney.png";
 import marvel from "../../assets/images/viewers-marvel.png";
 import pixar from "../../assets/images/viewers-pixar.png";
-import "./card_disney.scss";
 import { Link } from "react-router-dom";
+import "./card_disney.scss";
 
 const CardDisney = () => {
     return (
@@ -19,7 +19,7 @@ const CardDisney = () => {
                 <Link to="/channels/card/disney">
                     <div className="card_disney_item">
                         <img src={disney} alt="disney" />
-                        <video autoPlay preload="auto" muted loop playsInline>
+                        <video autoPlay muted preload="auto" loop playsInline>
                             <source src={disney_video} type="video/mp4" />
                         </video>
                     </div>

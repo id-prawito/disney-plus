@@ -6,7 +6,7 @@ import { MdMovie, MdVideoLibrary } from "react-icons/md";
 import logoNav from "../../assets/images/logoNav.svg";
 
 import "./header.scss";
-import Search from "./search";
+// import Search from "./search";
 import { GlobalContext } from "../../config/GlobalState";
 
 const Header = () => {

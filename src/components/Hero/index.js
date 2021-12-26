@@ -49,7 +49,7 @@ const Hero = (props) => {
                 }
                 setMovieItems(response.results.slice(0, 4));
             } catch {
-                console.log("error");
+                // console.log("error");
             }
         };
         getMovies();
@@ -62,7 +62,7 @@ const Hero = (props) => {
                 grabCursor={true}
                 spaceBetween={0}
                 slidesPerView={1}
-                autoplay={{ delay: 8000 }}
+                autoplay={{ delay: 10000 }}
             >
                 {movieItems.map((item, i) => (
                     <SwiperSlide key={i}>
@@ -474,6 +474,7 @@ const TrailerModal = (props) => {
                     width="100%"
                     height="520px"
                     title="trailer"
+                    color="#000000"
                     style={{ border: "none" }}
                     allowFullScreen
                 ></iframe>
