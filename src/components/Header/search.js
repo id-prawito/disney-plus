@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import { useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import tmdbApi from "../../services/tmdbApi";
 import { MovieCardSearch, TvCardSearch } from "../MovieCard";
@@ -28,7 +27,7 @@ const Search = () => {
             try {
                 let response = null;
                 if (query === "") {
-                    console.log("query belum ada");
+                    // console.log("query belum ada");
                 } else {
                     const category = "movie";
                     const params = {
