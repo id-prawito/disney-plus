@@ -6,7 +6,7 @@ import { MdMovie, MdVideoLibrary } from "react-icons/md";
 import logoNav from "../../assets/images/logoNav.svg";
 
 import "./header.scss";
-// import Search from "./search";
+import Search from "./search";
 import { GlobalContext } from "../../config/GlobalState";
 
 const Header = () => {
@@ -126,7 +126,7 @@ const Header = () => {
                     </div>
                     <div className="header__profile_link">
                         <div className="header__menu_watchlist">
-                            {/* <Search /> */}
+                            <Search />
                             <div className="header__item_watchlist">
                                 <FaPlus />
                                 <NavLink
