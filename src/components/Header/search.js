@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { useState } from "react/cjs/react.development";
 import tmdbApi from "../../services/tmdbApi";
 import { MovieCardSearch, TvCardSearch } from "../MovieCard";
 import {
