@@ -22,22 +22,22 @@
 
     &::before {
         content: "";
+        background-color: rgba($color: #000000, $alpha: 0.6);
         position: absolute;
         height: 100%;
         width: 100%;
         left: 0;
         top: 0;
-        background-color: rgba($color: #000000, $alpha: 0.6);
     }
 
     &::after {
         content: "";
+        background-image: linear-gradient(to top, $background-color, rgba(#000, 0));
         position: absolute;
         height: 400px;
         width: 100%;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to top, $background-color, rgba(#000, 0));
     }
 
     &__content {
@@ -126,8 +126,8 @@
             z-index: 1;
 
             .text_loading {
-                font-size: 16px;
                 color: rgb(175, 175, 175);
+                font-size: 16px;
                 font-weight: 500;
             }
 

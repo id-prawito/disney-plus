@@ -35,26 +35,26 @@ img {
 }
 
 .container {
-    margin: auto;
     padding: 20px 35px;
+    margin: auto;
     width: 100%;
 
     &_movie {
-        margin: auto;
-        padding: 20px 35px;
-        width: 100%;
-        gap: 5px;
         display: flex;
         flex-direction: column;
+        padding: 20px 35px;
+        margin: auto;
+        width: 100%;
+        gap: 5px;
     }
 
     &_castnya {
-        margin: auto;
-        padding: 20px 35px;
-        width: 340px;
-        gap: 5px;
         display: flex;
         flex-direction: column;
+        padding: 20px 35px;
+        margin: auto;
+        width: 340px;
+        gap: 5px;
     }
 }
 
@@ -62,9 +62,9 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 20px;
-    margin: auto;
     height: 100vh;
+    margin: auto;
+    gap: 20px;
 }
 
 .container_castnya_bisa {

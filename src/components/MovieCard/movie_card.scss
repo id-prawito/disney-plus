@@ -131,14 +131,12 @@
         margin-top: 2.3rem;
         border-radius: 4px;
         overflow: hidden;
-        // height: 100%;
         animation: pulse 2s infinite;
         transition: .5s ease-in-out;
 
         img {
             background: #25314d;
             border-radius: 5px;
-            // height: 100%;
         }
 
         @keyframes pulse {
@@ -163,14 +161,12 @@
         background-size: cover;
         background: #192133;
         border-radius: 4px;
-        // height: 100%;
         animation: pulse 2s infinite;
         transition: .5s ease-in-out;
 
         img {
             background: #25314d;
             border-radius: 5px;
-            // height: 100%;
         }
 
         @keyframes pulse {
@@ -281,10 +277,6 @@
         overflow: hidden;
         max-width: 120px;
         transition: .5s ease-in-out;
-
-        // @include ipads {
-        //     max-width: 80px;
-        // }
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 460px) {
             max-width: 80px;

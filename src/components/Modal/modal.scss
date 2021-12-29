@@ -33,6 +33,18 @@
         transition: transform 0.6s ease, opacity 0.6s ease;
         transform: translateY(-250px);
 
+        @include smartphones {
+            width: 80%;
+        }
+
+        @include ipads {
+            width: 85%;
+        }
+
+        @include laptop {
+            width: 85%;
+        }
+
         &_close {
             position: absolute;
             cursor: pointer;
@@ -49,6 +61,22 @@
     &.active &__content {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    &_iframe {
+        height: 520px;
+
+        @include smartphones {
+            height: 250px;
+        }
+
+        @include ipads {
+            height: 300px;
+        }
+
+        @include laptop {
+            height: 350px;
+        }
     }
 }
 

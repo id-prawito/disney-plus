@@ -1,13 +1,12 @@
 import React, { useRef, useEffect, useContext } from "react";
-import { FaHome, FaPlus, FaDice, FaGetPocket } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import { FaHome, FaPlus, FaDice, FaGetPocket } from "react-icons/fa";
 import logoProfile from "../../assets/images/pikachu.png";
+import { GlobalContext } from "../../config/GlobalState";
 import { MdMovie, MdVideoLibrary } from "react-icons/md";
 import logoNav from "../../assets/images/logoNav.svg";
-
+import Search from "./Search";
 import "./header.scss";
-import Search from "./search";
-import { GlobalContext } from "../../config/GlobalState";
 
 const Header = () => {
     const headerRef = useRef(null);

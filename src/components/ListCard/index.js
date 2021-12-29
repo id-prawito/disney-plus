@@ -1,8 +1,8 @@
 import { category, movieType, tvType } from "../../services/tmdbApi";
 import { MovieView, DiscoverMovieTV, DiscoverMovieTVNotWill } from "../Movie";
+import MetaDecorator from "../../config/MetaDecorator";
 import React from "react";
 import "./list.scss";
-import MetaDecorator from "../../config/MetaDecorator";
 
 const ListHome = () => {
     return (

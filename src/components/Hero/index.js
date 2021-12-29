@@ -304,7 +304,6 @@ const HeroSlideItem = (props) => {
 
 const HeroSlideItemTV = (props) => {
     let history = useHistory();
-
     const item = props.item;
     const background = apiConfig.originalImage(
         item.backdrop_path ? item.backdrop_path : item.poster_path
@@ -472,7 +471,8 @@ const TrailerModal = (props) => {
                 <iframe
                     ref={iframeRef}
                     width="100%"
-                    height="520px"
+                    // height="520px"
+                    className="modal_iframe"
                     title="trailer"
                     color="#000000"
                     style={{ border: "none" }}

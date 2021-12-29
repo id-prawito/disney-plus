@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import national_video from "../../assets/videos/15-national-geographic.mp4";
 import star_wars_video from "../../assets/videos/14-star-wars.mp4";
@@ -9,7 +10,6 @@ import national from "../../assets/images/viewers-national.png";
 import disney from "../../assets/images/viewers-disney.png";
 import marvel from "../../assets/images/viewers-marvel.png";
 import pixar from "../../assets/images/viewers-pixar.png";
-import { Link } from "react-router-dom";
 import "./card_disney.scss";
 
 const CardDisney = () => {
